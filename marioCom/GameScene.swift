@@ -4,7 +4,7 @@
 //
 //  Created by Isain Rodriguez on 26/03/2019.
 //  Copyright © 2019 Isain Rodriguez. All rights reserved.
-//
+// https://www.spriters-resource.com/nes/supermariobros/
 
 import SpriteKit
 import GameplayKit
@@ -13,11 +13,14 @@ class GameScene: SKScene {
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
+    var background = SKSpriteNode()
     
     override func didMove(to view: SKView) {
         
+        backGroundImage()
+        
         // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
+        /*self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
         if let label = self.label {
             label.alpha = 0.0
             label.run(SKAction.fadeIn(withDuration: 2.0))
@@ -34,6 +37,46 @@ class GameScene: SKScene {
             spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
                                               SKAction.fadeOut(withDuration: 0.5),
                                               SKAction.removeFromParent()]))
+        }*/
+        
+        
+    }
+    
+    func backGroundImage() {
+        let backGroundImage = SKTexture(imageNamed: "fondob")
+        
+        let movimientoFondo = SKAction.move(by: CGVector(dx: -backGroundImage.size().width, dy: 0), duration: 25)
+        
+        let movimientoFondoOrigen = SKAction.move(by: CGVector(dx: backGroundImage.size().width, dy: 0), duration: 0)
+        
+        // repetimos hasta el infinito
+        let movimientoInfinitoFondo = SKAction.repeatForever(SKAction.sequence([movimientoFondo, movimientoFondoOrigen]))
+        
+        
+        var i: CGFloat = 0
+        print(self.frame.height)
+       
+       
+        while i < 2 {
+            // Le ponemos la textura al fondo
+            background = SKSpriteNode(texture: backGroundImage)
+             print(background.size.height)
+            // Indicamos la posición inicial del fondo
+            background.position = CGPoint(x: backGroundImage.size().width * i, y: self.frame.midY)
+            
+            // Estiramos la altura de la imagen para que se adapte al alto de la pantalla
+            background.size.height = self.frame.height
+             print(background.size.height)
+            // Indicamos zPosition para que quede detrás de todo
+            background.zPosition = -1
+            
+            // Aplicamos la acción
+            background.run(movimientoInfinitoFondo)
+            // Ponemos el fondo en la escena
+            self.addChild(background)
+            
+            // Incrementamos contador
+            i += 1
         }
     }
     
