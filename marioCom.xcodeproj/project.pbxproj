@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		022BA091224A9C6100CEF2FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BA090224A9C6100CEF2FD /* AppDelegate.swift */; };
+		022BA093224A9C6100CEF2FD /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 022BA092224A9C6100CEF2FD /* GameScene.sks */; };
+		022BA095224A9C6100CEF2FD /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 022BA094224A9C6100CEF2FD /* Actions.sks */; };
+		022BA097224A9C6100CEF2FD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BA096224A9C6100CEF2FD /* GameScene.swift */; };
+		022BA099224A9C6100CEF2FD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BA098224A9C6100CEF2FD /* GameViewController.swift */; };
+		022BA09C224A9C6100CEF2FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 022BA09A224A9C6100CEF2FD /* Main.storyboard */; };
+		022BA09E224A9C6200CEF2FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022BA09D224A9C6200CEF2FD /* Assets.xcassets */; };
+		022BA0A1224A9C6200CEF2FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 022BA09F224A9C6200CEF2FD /* LaunchScreen.storyboard */; };
+		022BA0AC224A9C6200CEF2FD /* marioComTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BA0AB224A9C6200CEF2FD /* marioComTests.swift */; };
+		022BA0B7224A9C6200CEF2FD /* marioComUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BA0B6224A9C6200CEF2FD /* marioComUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		022BA0A8224A9C6200CEF2FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 022BA085224A9C6100CEF2FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 022BA08C224A9C6100CEF2FD;
+			remoteInfo = marioCom;
+		};
+		022BA0B3224A9C6200CEF2FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 022BA085224A9C6100CEF2FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 022BA08C224A9C6100CEF2FD;
+			remoteInfo = marioCom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		022BA08D224A9C6100CEF2FD /* marioCom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marioCom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		022BA090224A9C6100CEF2FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		022BA092224A9C6100CEF2FD /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		022BA094224A9C6100CEF2FD /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		022BA096224A9C6100CEF2FD /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		022BA098224A9C6100CEF2FD /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		022BA09B224A9C6100CEF2FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		022BA09D224A9C6200CEF2FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		022BA0A0224A9C6200CEF2FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		022BA0A2224A9C6200CEF2FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		022BA0A7224A9C6200CEF2FD /* marioComTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = marioComTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		022BA0AB224A9C6200CEF2FD /* marioComTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marioComTests.swift; sourceTree = "<group>"; };
+		022BA0AD224A9C6200CEF2FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		022BA0B2224A9C6200CEF2FD /* marioComUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = marioComUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		022BA0B6224A9C6200CEF2FD /* marioComUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marioComUITests.swift; sourceTree = "<group>"; };
+		022BA0B8224A9C6200CEF2FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		022BA08A224A9C6100CEF2FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		022BA0A4224A9C6200CEF2FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		022BA0AF224A9C6200CEF2FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		022BA084224A9C6100CEF2FD = {
+			isa = PBXGroup;
+			children = (
+				022BA08F224A9C6100CEF2FD /* marioCom */,
+				022BA0AA224A9C6200CEF2FD /* marioComTests */,
+				022BA0B5224A9C6200CEF2FD /* marioComUITests */,
+				022BA08E224A9C6100CEF2FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		022BA08E224A9C6100CEF2FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				022BA08D224A9C6100CEF2FD /* marioCom.app */,
+				022BA0A7224A9C6200CEF2FD /* marioComTests.xctest */,
+				022BA0B2224A9C6200CEF2FD /* marioComUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		022BA08F224A9C6100CEF2FD /* marioCom */ = {
+			isa = PBXGroup;
+			children = (
+				022BA090224A9C6100CEF2FD /* AppDelegate.swift */,
+				022BA092224A9C6100CEF2FD /* GameScene.sks */,
+				022BA094224A9C6100CEF2FD /* Actions.sks */,
+				022BA096224A9C6100CEF2FD /* GameScene.swift */,
+				022BA098224A9C6100CEF2FD /* GameViewController.swift */,
+				022BA09A224A9C6100CEF2FD /* Main.storyboard */,
+				022BA09D224A9C6200CEF2FD /* Assets.xcassets */,
+				022BA09F224A9C6200CEF2FD /* LaunchScreen.storyboard */,
+				022BA0A2224A9C6200CEF2FD /* Info.plist */,
+			);
+			path = marioCom;
+			sourceTree = "<group>";
+		};
+		022BA0AA224A9C6200CEF2FD /* marioComTests */ = {
+			isa = PBXGroup;
+			children = (
+				022BA0AB224A9C6200CEF2FD /* marioComTests.swift */,
+				022BA0AD224A9C6200CEF2FD /* Info.plist */,
+			);
+			path = marioComTests;
+			sourceTree = "<group>";
+		};
+		022BA0B5224A9C6200CEF2FD /* marioComUITests */ = {
+			isa = PBXGroup;
+			children = (
+				022BA0B6224A9C6200CEF2FD /* marioComUITests.swift */,
+				022BA0B8224A9C6200CEF2FD /* Info.plist */,
+			);
+			path = marioComUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		022BA08C224A9C6100CEF2FD /* marioCom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 022BA0BB224A9C6200CEF2FD /* Build configuration list for PBXNativeTarget "marioCom" */;
+			buildPhases = (
+				022BA089224A9C6100CEF2FD /* Sources */,
+				022BA08A224A9C6100CEF2FD /* Frameworks */,
+				022BA08B224A9C6100CEF2FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = marioCom;
+			productName = marioCom;
+			productReference = 022BA08D224A9C6100CEF2FD /* marioCom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		022BA0A6224A9C6200CEF2FD /* marioComTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 022BA0BE224A9C6200CEF2FD /* Build configuration list for PBXNativeTarget "marioComTests" */;
+			buildPhases = (
+				022BA0A3224A9C6200CEF2FD /* Sources */,
+				022BA0A4224A9C6200CEF2FD /* Frameworks */,
+				022BA0A5224A9C6200CEF2FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				022BA0A9224A9C6200CEF2FD /* PBXTargetDependency */,
+			);
+			name = marioComTests;
+			productName = marioComTests;
+			productReference = 022BA0A7224A9C6200CEF2FD /* marioComTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		022BA0B1224A9C6200CEF2FD /* marioComUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 022BA0C1224A9C6200CEF2FD /* Build configuration list for PBXNativeTarget "marioComUITests" */;
+			buildPhases = (
+				022BA0AE224A9C6200CEF2FD /* Sources */,
+				022BA0AF224A9C6200CEF2FD /* Frameworks */,
+				022BA0B0224A9C6200CEF2FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				022BA0B4224A9C6200CEF2FD /* PBXTargetDependency */,
+			);
+			name = marioComUITests;
+			productName = marioComUITests;
+			productReference = 022BA0B2224A9C6200CEF2FD /* marioComUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		022BA085224A9C6100CEF2FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Isain Rodriguez";
+				TargetAttributes = {
+					022BA08C224A9C6100CEF2FD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					022BA0A6224A9C6200CEF2FD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 022BA08C224A9C6100CEF2FD;
+					};
+					022BA0B1224A9C6200CEF2FD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 022BA08C224A9C6100CEF2FD;
+					};
+				};
+			};
+			buildConfigurationList = 022BA088224A9C6100CEF2FD /* Build configuration list for PBXProject "marioCom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 022BA084224A9C6100CEF2FD;
+			productRefGroup = 022BA08E224A9C6100CEF2FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				022BA08C224A9C6100CEF2FD /* marioCom */,
+				022BA0A6224A9C6200CEF2FD /* marioComTests */,
+				022BA0B1224A9C6200CEF2FD /* marioComUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		022BA08B224A9C6100CEF2FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022BA09C224A9C6100CEF2FD /* Main.storyboard in Resources */,
+				022BA093224A9C6100CEF2FD /* GameScene.sks in Resources */,
+				022BA09E224A9C6200CEF2FD /* Assets.xcassets in Resources */,
+				022BA0A1224A9C6200CEF2FD /* LaunchScreen.storyboard in Resources */,
+				022BA095224A9C6100CEF2FD /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		022BA0A5224A9C6200CEF2FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		022BA0B0224A9C6200CEF2FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		022BA089224A9C6100CEF2FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022BA097224A9C6100CEF2FD /* GameScene.swift in Sources */,
+				022BA099224A9C6100CEF2FD /* GameViewController.swift in Sources */,
+				022BA091224A9C6100CEF2FD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		022BA0A3224A9C6200CEF2FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022BA0AC224A9C6200CEF2FD /* marioComTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		022BA0AE224A9C6200CEF2FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022BA0B7224A9C6200CEF2FD /* marioComUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		022BA0A9224A9C6200CEF2FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 022BA08C224A9C6100CEF2FD /* marioCom */;
+			targetProxy = 022BA0A8224A9C6200CEF2FD /* PBXContainerItemProxy */;
+		};
+		022BA0B4224A9C6200CEF2FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 022BA08C224A9C6100CEF2FD /* marioCom */;
+			targetProxy = 022BA0B3224A9C6200CEF2FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		022BA09A224A9C6100CEF2FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				022BA09B224A9C6100CEF2FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		022BA09F224A9C6200CEF2FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				022BA0A0224A9C6200CEF2FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		022BA0B9224A9C6200CEF2FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		022BA0BA224A9C6200CEF2FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		022BA0BC224A9C6200CEF2FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = marioCom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = isain.marioCom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		022BA0BD224A9C6200CEF2FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = marioCom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = isain.marioCom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		022BA0BF224A9C6200CEF2FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = marioComTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = isain.marioComTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marioCom.app/marioCom";
+			};
+			name = Debug;
+		};
+		022BA0C0224A9C6200CEF2FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = marioComTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = isain.marioComTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marioCom.app/marioCom";
+			};
+			name = Release;
+		};
+		022BA0C2224A9C6200CEF2FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = marioComUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = isain.marioComUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = marioCom;
+			};
+			name = Debug;
+		};
+		022BA0C3224A9C6200CEF2FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = marioComUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = isain.marioComUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = marioCom;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		022BA088224A9C6100CEF2FD /* Build configuration list for PBXProject "marioCom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				022BA0B9224A9C6200CEF2FD /* Debug */,
+				022BA0BA224A9C6200CEF2FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		022BA0BB224A9C6200CEF2FD /* Build configuration list for PBXNativeTarget "marioCom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				022BA0BC224A9C6200CEF2FD /* Debug */,
+				022BA0BD224A9C6200CEF2FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		022BA0BE224A9C6200CEF2FD /* Build configuration list for PBXNativeTarget "marioComTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				022BA0BF224A9C6200CEF2FD /* Debug */,
+				022BA0C0224A9C6200CEF2FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		022BA0C1224A9C6200CEF2FD /* Build configuration list for PBXNativeTarget "marioComUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				022BA0C2224A9C6200CEF2FD /* Debug */,
+				022BA0C3224A9C6200CEF2FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 022BA085224A9C6100CEF2FD /* Project object */;
+}
