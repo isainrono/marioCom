@@ -576,13 +576,40 @@ class GameScene: SKScene,SKPhysicsContactDelegate{
             if bola.frame.minX < left.frame.minX  || bola.frame.maxX > jump.frame.maxX{
                 print("salio de pantalla")
                 if cuerpoB.categoryBitMask == tipoNodo.bola.rawValue{
-                    //contact.bodyB.node?.removeFromParent()
-                    bola.position.x = left.frame.minX + 100
-                    //bolaModel()
+                    contact.bodyB.node?.removeFromParent()
+                    
+                    bola = SKSpriteNode(texture: texturaBola4)
+                    bola.position = CGPoint(x: left.frame.minX + 500, y: 0)
+                    bola.physicsBody =  SKPhysicsBody(rectangleOf: CGSize(width: 50, height: 50))
+                    bola.physicsBody?.isDynamic = true
+                    
+                    bola.physicsBody?.mass = 30
+                    bola.size = CGSize(width: 50, height: 50)
+                    bola.physicsBody!.categoryBitMask = tipoNodo.bola.rawValue
+                    bola.physicsBody!.collisionBitMask = tipoNodo.suelo.rawValue | tipoNodo.enemy.rawValue | tipoNodo.coin.rawValue
+                    bola.physicsBody!.contactTestBitMask = tipoNodo.suelo.rawValue | tipoNodo.enemy.rawValue
+                    
+                    //bola.run(animacionInfinita)
+                    bola.zPosition = 1
+                    self.addChild(bola)
+                    
                 } else if cuerpoA.categoryBitMask == tipoNodo.bola.rawValue {
-                    //contact.bodyA.node?.removeFromParent()
-                    //bolaModel()
-                    bola.position.x = left.frame.minX + 100
+                    contact.bodyA.node?.removeFromParent()
+                    bola = SKSpriteNode(texture: texturaBola4)
+                    bola.position = CGPoint(x: left.frame.minX + 500, y: 0)
+                    bola.physicsBody =  SKPhysicsBody(rectangleOf: CGSize(width: 50, height: 50))
+                    bola.physicsBody?.isDynamic = true
+                    
+                    bola.physicsBody?.mass = 30
+                    bola.size = CGSize(width: 50, height: 50)
+                    bola.physicsBody!.categoryBitMask = tipoNodo.bola.rawValue
+                    bola.physicsBody!.collisionBitMask = tipoNodo.suelo.rawValue | tipoNodo.enemy.rawValue | tipoNodo.coin.rawValue
+                    bola.physicsBody!.contactTestBitMask = tipoNodo.suelo.rawValue | tipoNodo.enemy.rawValue
+                    
+                    //bola.run(animacionInfinita)
+                    bola.zPosition = 1
+                    self.addChild(bola)
+
                 }
                 
                 
